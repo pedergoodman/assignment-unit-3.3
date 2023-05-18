@@ -68,6 +68,12 @@ for (let x of supplyChanges) {
 // 8. Write a loop to determine the total number of parts available by
 //    adding up all the numbers in the 'supplyChanges' array.
 console.log('8. Total supplies available is:');
+let totalSupplies = 0
+for (x in supplyChanges){
+    totalSupplies += supplyChanges[x]
+    console.log('Current supply:', totalSupplies);
+}
+console.log("Total supplies available:", totalSupplies);
 
 
 // 9. We have a large stash of parts in our warehouse that we 
